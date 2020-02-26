@@ -1,0 +1,68 @@
+{
+    "restaurants": [
+        {
+            "restaurantName": "Bronco",
+            "address": "39 Rue des Petites Écuries, 75010 Paris",
+            "lat": 48.8737815,
+            "long": 2.3501649,
+            "ratings": [
+                {
+                    "stars": 4,
+                    "comment": "Un excellent restaurant, j'y reviendrai ! Par contre il vaut mieux aimer la viande."
+                },
+                {
+                    "stars": 5,
+                    "comment": "Tout simplement mon restaurant préféré !"
+                }
+            ]
+        },
+        {
+            "restaurantName": "Babalou",
+            "address": "4 Rue Lamarck, 75018 Paris",
+            "lat": 48.8865035,
+            "long": 2.3442197,
+            "ratings": [
+                {
+                    "stars": 5,
+                    "comment": "Une minuscule pizzeria délicieuse cachée juste à côté du Sacré choeur !"
+                },
+                {
+                    "stars": 3,
+                    "comment": "J'ai trouvé ça correct, sans plus"
+                }
+            ]
+        },
+        {
+            "restaurantName": "Da Graziella",
+            "address": "43 Rue des Petites Écuries, 75010 Paris",
+            "lat": 48.873895,
+            "long": 2.349815,
+            "ratings": [
+                {
+                    "stars": 5,
+                    "comment": "Très bonnes pizzas. Lieu très petit et une déco très sympa"
+                },
+                {
+                    "stars": 5,
+                    "comment": "Une très bonne pizzeria... Un bon moment"
+                }
+            ]
+        },
+        {
+            "restaurantName": "Les Petites Ecuries",
+            "address": "40 Rue des Petites Écuries, 75010 Paris",
+            "lat": 48.873966,
+            "long": 2.350700,
+            "ratings": [
+                {
+                    "stars": 3,
+                    "comment": "Le fric c'est chic. Elégant bar  brasserie avec une belle sélection de craft beer mais le tout est assez onéreux"
+                },
+                {
+                    "stars": 3,
+                    "comment": "Belle terrasse et déco intérieure sympa. Cependant, plats et desserts assez décevants pour ma part et service un peu décousu."
+                }
+            ]
+        }
+    ]
+}
