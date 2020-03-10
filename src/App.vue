@@ -3,7 +3,6 @@
       <Header />
       <div class="layout">
         <div id="restoExplore">
-          <RestoDetail/>
           <RestoList :restaurants="list.restaurants"/>
         </div>
         <div class="map">
@@ -15,7 +14,6 @@
 
 <script>
 import Header from './components/Header.vue'
-import RestoDetail from "./components/RestoDetail";
 import RestoList from "./components/RestoList";
 import Map from "./components/Map";
 import list from "./assets/restos.json"; // import du fichier JSON
@@ -27,7 +25,6 @@ export default {
   name: 'App',
   components: {
     Header,
-    RestoDetail,
     RestoList,
     Map
   }

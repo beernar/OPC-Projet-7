@@ -62,7 +62,7 @@
             };
             this.google = await GoogleMapsApiLoader({
                 libraries: ['places'],
-                apiKey: "AIzaSyC8nyrVz0ip50G0ThC5RoCm9k2uPPCUQ9c"
+                apiKey: ""
             });
             this.map = new this.google.maps.Map(this.$refs.googleMap, options)
         }

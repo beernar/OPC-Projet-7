@@ -1,31 +1,27 @@
 <!--
 doit appeler le composant Comment > fait une boucle sur le composant comment
-v-for in comment
 -->
 <template>
     <div>
         <h5>Commentaires</h5>
+        <!--{{ ratings }}-->
         <ul>
-            <li v-for="resto in restaurants" :key="resto.comment">
-                <div>{{ resto.comment }}
-                    <CommentList :comments="resto.ratings"/> 
-                </div>
-                </li> 
+            <li v-for="(rating, index) in ratings" :key="index">
+                <Comment :rating="rating"/>
+            </li> 
         </ul>
     </div>
 </template>
 
 
-<!--
 <script>
-import CommentList from "./CommentList.vue";
-export default {
+import Comment from "./Comment.vue";
+export default {    
     components:{
-        CommentList,
+        Comment,
     },
     props: {
-        restaurants: [],
+        ratings: [],// veux dire que mon composant CommentList.vue accepte la propiétée ratings 
     }
 }
 </script>
--->
