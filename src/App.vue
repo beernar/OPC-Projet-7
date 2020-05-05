@@ -1,38 +1,38 @@
 <template>
   <div id="app">
-      <Header />
+    <Header />
+    <Map api-key="AIzaSyAQ5VC3npZZR1ULpdFuO7cmpcc2CDeU28g" v-slot="map">
       <div class="layout">
         <div id="restoExplore">
-          <RestoList :restaurants="list.restaurants"/>
+          <RestoList  :placeApi="map.placeApi" :map="map.map" :restaurants="list.restaurants" :google="map.google" />
         </div>
-        <div class="map">
-          <Map api-key="AIzaSyC8nyrVz0ip50G0ThC5RoCm9k2uPPCUQ9c"/>
-        </div>
+        <div class="map"></div>
       </div>
+    </Map>
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header.vue";
 import RestoList from "./components/RestoList";
 import Map from "./components/Map";
 import list from "./assets/restos.json"; // import du fichier JSON
 
 export default {
-  data: ()=>({
+  data: () => ({
     list,
   }),
-  name: 'App',
+  name: "App",
   components: {
     Header,
     RestoList,
     Map
-  }
-}
+  },
+  methods: {}
+};
 </script>
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -54,10 +54,4 @@ export default {
 body {
   margin: 0px;
 }
-
-.map {
-  align-items: flex-end;
-  width: 70vw;
-}
-
 </style>
